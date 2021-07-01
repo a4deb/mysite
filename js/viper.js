@@ -238,14 +238,6 @@
 		var preloader = $window.on('load', function() { 
 			animate_header_elements();
 			// header_down_nav.click();
-
-			setTimeout(function() {
-				$('.loader-box').click();
-			}, 5000);
-		});
-
-		$('.loader-box').on('click', function() {
-			play_audio.play();
 		});
 
 		// audio controls
@@ -372,6 +364,7 @@
 		$(header_down_nav).click(function( e, header_obj ) {
 			e.preventDefault();
 
+			play_audio.play();
 			setTimeout(function() {
 				proj_title.animate({ top: 0 }, slide_duration - 500, 'easeOutExpo');
 			}, 4300);
@@ -488,6 +481,7 @@
 		$(proj_nav).click(function( e, down_nav, up_nav ) {
 			e.preventDefault();
 
+			play_audio.play();
 			setTimeout(function() {
 				proj_title.animate({ top: 0 }, slide_duration - 500, 'easeOutExpo');
 			}, 4300);
