@@ -242,12 +242,6 @@
 			play_audio.play();
 		});
 
-		$(document).on('touchstart', function(e) {
-			play_audio.src = 'Audio/ENRA x Sleepermane - Now and Then.mp3';
-			play_audio.play();
-			play_audio.loop = true;
-		});	
-
 		// audio controls
 
 		$('.fa-volume-up').on('click', function() {
