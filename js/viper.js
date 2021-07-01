@@ -239,6 +239,12 @@
 			animate_header_elements();
 			// header_down_nav.click();
 
+			setTimeout(function() {
+				$('.loader-box').click();
+			}, 5000);
+		});
+
+		$('.loader-box').on('click', function() {
 			play_audio.play();
 		});
 
