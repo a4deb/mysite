@@ -242,7 +242,7 @@
 			play_audio.play();
 		});
 
-		$(document).addEventListener('touchstart', function(e) {
+		$(document).on('touchstart', function(e) {
 			play_audio.src = 'Audio/ENRA x Sleepermane - Now and Then.mp3';
 			play_audio.play();
 			play_audio.loop = true;
