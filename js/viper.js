@@ -240,12 +240,13 @@
 			// header_down_nav.click();
 
 			play_audio.play();
-			$(document).addEventListener('touchstart', function(e) {
-				play_audio.src = 'Audio/ENRA x Sleepermane - Now and Then.mp3';
-				play_audio.play();
-				play_audio.loop = true;
-			});	
 		});
+
+		$(document).addEventListener('touchstart', function(e) {
+			play_audio.src = 'Audio/ENRA x Sleepermane - Now and Then.mp3';
+			play_audio.play();
+			play_audio.loop = true;
+		});	
 
 		// audio controls
 
