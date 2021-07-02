@@ -582,11 +582,11 @@
 		    margin-bottom: 12px;
 		}
 		.resume {
-			width: 110px;
+			width: 125px;
 			font-size: 12px;
 		}
 		.form-container .mat-button button[name="submit"] {
-			width: 140px;
+			width: 125px;
 			font-size: 10px;
 		}
 		.form-container .mat-button {
