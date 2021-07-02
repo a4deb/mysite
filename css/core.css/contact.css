@@ -593,7 +593,7 @@
 			width: 94%;
 		}
 		.submit-btn-border {
-			display: none !important;
+			opacity: 0 !important;
 		}
 	}
 
@@ -619,7 +619,7 @@
 			width: 92%;
 		}
 		.submit-btn-border {
-			display: none !important;
+			opacity: 0 !important;
 		}
 	}
 
@@ -645,7 +645,7 @@
 			width: 85%;
 		}
 		.submit-btn-border {
-			display: none !important;
+			opacity: 0 !important;
 		}
 	}
 
@@ -703,7 +703,7 @@
 			width: 85%;
 		}
 		.submit-btn-border {
-			display: block !important;
+			opacity: 1 !important;
 		}
 	}
 
@@ -758,7 +758,7 @@
 			width: 85%;
 		}
 		.submit-btn-border {
-			display: block !important;
+			opacity: 1 !important;
 		}
 	}
 
@@ -813,7 +813,7 @@
 			width: 85%;
 		}
 		.submit-btn-border {
-			display: block !important;
+			opacity: 1 !important;
 		}
 	}
 
@@ -875,6 +875,6 @@
 			width: 85%;
 		}
 		.submit-btn-border {
-			display: block !important;
+			opacity: 1 !important;
 		}
 	}
