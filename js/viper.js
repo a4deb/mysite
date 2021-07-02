@@ -224,13 +224,6 @@
 						ease: Elastic.easeInOut
 					});
 
-					TweenMax.to('.mute-pos', 2.4, {
-						opacity: 1,
-						marginTop: 0,
-						delay: 8.4,
-						ease: Expo.easeInOut
-					});
-
 			}
 
 		var play_audio = document.getElementById('bg-audio');
@@ -365,6 +358,12 @@
 			e.preventDefault();
 
 			play_audio.play();
+			TweenMax.to('.mute-pos', 2, {
+				opacity: 1,
+				marginTop: 0,
+				delay: 2.4,
+				ease: Expo.easeInOut
+			});
 			setTimeout(function() {
 				proj_title.animate({ top: 0 }, slide_duration - 500, 'easeOutExpo');
 			}, 4300);
@@ -482,6 +481,12 @@
 			e.preventDefault();
 
 			play_audio.play();
+			TweenMax.to('.mute-pos', 2, {
+				opacity: 1,
+				marginTop: 0,
+				delay: 2.4,
+				ease: Expo.easeInOut
+			});
 			setTimeout(function() {
 				proj_title.animate({ top: 0 }, slide_duration - 500, 'easeOutExpo');
 			}, 4300);
