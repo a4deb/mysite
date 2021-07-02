@@ -52,6 +52,7 @@
 	    font: 12px 'gotham-light';
 	    z-index: 2;
 	    padding: 8px;
+	    line-height: 25px;
 	    padding-right: 0;
 	    padding-left: 11px;
 	    transition: .3s ease-in;
