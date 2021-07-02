@@ -451,7 +451,7 @@
 	    transition: .2s linear;
 	    transition-delay: 0s;
 	    transform: translateX(-50%) scaleX(1) scaleY(1);
-	    z-index: 500;
+	    z-index: 20000;
 	}
 	.mat-button button:hover + .submit-btn-border {
 		border-color: #ff8f42;
@@ -756,4 +756,27 @@
 			line-height: 0;
 		    margin-bottom: 0;
 		}
+	}
+	.resume {
+		position: relative;
+	    pointer-events: auto;
+	    padding: 20px;
+	    width: 200px;
+	    text-transform: uppercase;
+	    outline-style: none;
+	    font: 12px 'montserrat-light';
+	    letter-spacing: 2px;
+	    font-weight: 900;
+	    border: none;
+	    text-decoration: none;
+	    background-color: #191919;
+	    color: #999999;
+	    cursor: pointer;
+	    z-index: 1000;
+	    transition: .3s ease;
+	}
+	.resume:hover {
+	    background-color: #222;
+	    color: #ff8f42;
+	    border-color: #ff8f42;
 	}
