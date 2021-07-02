@@ -251,6 +251,29 @@
 	.form-container .mat-inputs span.msg-placeholder {
 		top: 384px;
 	}
+	.resume {
+		position: relative;
+	    pointer-events: auto;
+	    padding: 20px;
+	    width: 200px;
+	    text-transform: uppercase;
+	    outline-style: none;
+	    font: 12px 'montserrat-light';
+	    letter-spacing: 2px;
+	    font-weight: 900;
+	    border: none;
+	    text-decoration: none;
+	    background-color: #191919;
+	    color: #999999;
+	    cursor: pointer;
+	    z-index: 1000;
+	    transition: .3s ease;
+	}
+	.resume:hover {
+	    background-color: #222;
+	    color: #ff8f42;
+	    border-color: #ff8f42;
+	}
 
 	/* animate placeholders */
 	.form-container .mat-inputs input[name="name"]:focus ~ span.name-placeholder,
@@ -316,7 +339,7 @@
 	}
 	.form-container .mat-button button[name="submit"]::after {
 	    position: absolute;
-	    content: "lets connect";
+	    content: "submit";
 	    top: 0;
 	    left: 0;
 	    height: 100%;
@@ -558,6 +581,20 @@
 			line-height: 0;
 		    margin-bottom: 12px;
 		}
+		.resume {
+			width: 110px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 140px;
+			font-size: 10px;
+		}
+		.form-container .mat-button {
+			width: 94%;
+		}
+		.submit-btn-border {
+			display: none !important;
+		}
 	}
 
 	@media ( min-width: 375px ) {
@@ -570,6 +607,20 @@
 			line-height: 0;
 		    margin-bottom: 12px;
 		}
+		.resume {
+			width: 110px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 150px;
+			font-size: 10px;
+		}
+		.form-container .mat-button {
+			width: 85%;
+		}
+		.submit-btn-border {
+			display: none !important;
+		}
 	}
 
 	@media ( min-width: 425px ) {
@@ -581,6 +632,20 @@
 			display: inline-block;
 			line-height: 0;
 		    margin-bottom: 12px;
+		}
+		.resume {
+			width: 110px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 185px;
+			font-size: 10px;
+		}
+		.form-container .mat-button {
+			width: 85%;
+		}
+		.submit-btn-border {
+			display: none !important;
 		}
 	}
 
@@ -626,6 +691,20 @@
 			line-height: 0;
 		    margin-bottom: 20px;
 		}
+		.resume {
+			width: 130px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button {
+			width: 85%;
+		}
+		.submit-btn-border {
+			display: block !important;
+		}
 	}
 
 	@media ( min-width: 1024px ) {
@@ -667,6 +746,20 @@
 			line-height: 0;
 		    margin-bottom: 0;
 		}
+		.resume {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button {
+			width: 85%;
+		}
+		.submit-btn-border {
+			display: block !important;
+		}
 	}
 
 	@media ( min-width: 1440px ) {
@@ -707,6 +800,20 @@
 			display: inline-block;
 			line-height: 0;
 		    margin-bottom: 0;
+		}
+		.resume {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button {
+			width: 85%;
+		}
+		.submit-btn-border {
+			display: block !important;
 		}
 	}
 
@@ -756,27 +863,18 @@
 			line-height: 0;
 		    margin-bottom: 0;
 		}
-	}
-	.resume {
-		position: relative;
-	    pointer-events: auto;
-	    padding: 20px;
-	    width: 200px;
-	    text-transform: uppercase;
-	    outline-style: none;
-	    font: 12px 'montserrat-light';
-	    letter-spacing: 2px;
-	    font-weight: 900;
-	    border: none;
-	    text-decoration: none;
-	    background-color: #191919;
-	    color: #999999;
-	    cursor: pointer;
-	    z-index: 1000;
-	    transition: .3s ease;
-	}
-	.resume:hover {
-	    background-color: #222;
-	    color: #ff8f42;
-	    border-color: #ff8f42;
+		.resume {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button button[name="submit"] {
+			width: 230px;
+			font-size: 12px;
+		}
+		.form-container .mat-button {
+			width: 85%;
+		}
+		.submit-btn-border {
+			display: block !important;
+		}
 	}
