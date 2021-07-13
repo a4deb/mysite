@@ -18,7 +18,7 @@
 		src: url('../../fonts/GOTHAM-BLACK.ttf') format('truetype');
 	}
 	@font-face {
-		font-family: gotham-light;
+		font-family: 'gotham-light';
 		src: url('../../fonts/GOTHAM-LIGHT.ttf') format('truetype');
 	}
 	@font-face {
