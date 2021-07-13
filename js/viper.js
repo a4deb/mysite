@@ -3,6 +3,8 @@
 		var $window = $(window),
 		$doc_el = $('html, body');
 
+		var header_video = document.getElementById('headerVideo');
+
 		$('.down-btn').hover(function( down_border, btn_title ) {
 			btn_title = $('.down-btn-title').toggleClass('show-down-btn-title');
 			down_border = $('.btn-border2').toggleClass('hide-border2');
@@ -128,6 +130,13 @@
 						opacity: 1,
 						marginTop: 0,
 						delay: 7,
+						ease: Expo.easeInOut
+					});
+
+					TweenMax.to('.header-id', 3, {
+						y: 0,
+						opacity: 1,
+						delay: 6.4,
 						ease: Expo.easeInOut
 					});
 
@@ -357,7 +366,10 @@
 		$(header_down_nav).click(function( e, header_obj ) {
 			e.preventDefault();
 
+			header_video = document.getElementById('headerVideo');
 			play_audio.play();
+			header_video.pause();
+
 			TweenMax.to('.mute-pos', 2, {
 				opacity: 1,
 				marginTop: 0,
@@ -479,8 +491,11 @@
 
 		$(proj_nav).click(function( e, down_nav, up_nav ) {
 			e.preventDefault();
-
+			
+			header_video = document.getElementById('headerVideo');
 			play_audio.play();
+			header_video.pause();
+
 			TweenMax.to('.mute-pos', 2, {
 				opacity: 1,
 				marginTop: 0,
@@ -797,6 +812,7 @@
 
 				if (_hash == 'header') {
 
+					header_video.play();
 					setTimeout(function() {
 						menu.css({
 							top: '-80px',
