@@ -54,6 +54,7 @@
 		user-select: none;
 	}
 	header .logo-wrapper .logo .logo-text {
+		margin-left: 30px;
 		font-size: 16px;
 	    letter-spacing: 5px;
 	    color: #fff;
@@ -455,14 +456,29 @@
 		text-shadow: -15px 0 20px rgba(0, 0, 0, 0.80);
 	}
 	.header-id {
-		height: 135px;
-		width: 135px;
-		display: none;
+	    position: absolute;
+	    left: 40px;
+	    top: 30px;
+	    height: 45px;
+	    width: auto;
+	    z-index: 1000;
+	    opacity: 0;
+	    user-select: none;
+	    transform: translateY(30px);
 	}
 
 
 	/* responsive */
 	@media ( min-width: 320px ) {
+		.header-id {
+		    margin-top: -4px;
+		    height: 50px;
+		}
+		header .logo-wrapper .logo .logo-text {
+		    font-size: 12px;
+		    letter-spacing: 10px;
+		    margin-left: 80px !important;
+		}
 		header .first-header,
 		header .second-header {
 			display: none;
@@ -504,6 +520,15 @@
 	}
 
 	@media ( min-width: 375px ) {
+		.header-id {
+		    margin-top: -4px;
+		    height: 50px;
+		}
+		header .logo-wrapper .logo .logo-text {
+		    font-size: 12px;
+		    letter-spacing: 10px;
+		    margin-left: 80px !important;
+		}
 		header .first-header,
 		header .second-header {
 			display: none;
@@ -547,6 +572,15 @@
 	}
 
 	@media ( min-width: 425px ) {
+		.header-id {
+		    margin-top: -4px;
+		    height: 50px;
+		}
+		header .logo-wrapper .logo .logo-text {
+		    font-size: 12px;
+		    letter-spacing: 10px;
+		    margin-left: 70px !important;
+		}
 		header .first-header,
 		header .second-header {
 			display: none;
@@ -590,6 +624,51 @@
 	}
 
 	@media ( min-width: 768px ) {
+		.header-id {
+		    margin-top: -6px;
+		    height: 50px;
+		}
+		header .logo-wrapper .logo .logo-text {
+		    font-size: 12px;
+		    letter-spacing: 10px;
+		    margin-left: 70px !important;
+		}
+		header .first-header,
+		header .second-header {
+			display: block;
+		}
+		.first-header {
+		    font-size: 96px;
+		}
+		header .second-header {
+		    font-size: 100px;
+		    letter-spacing: 5px;
+		}
+		header .little-header {
+			font-size: 13px;
+		}
+		ul.social-icons {
+			top: 45%;
+			margin-left: 0;
+		}
+		header .typing-wrapper {
+			width: 230px;
+		}
+		.mobile-header {
+			display: none;
+		}
+	}
+
+	@media ( min-width: 1440px ) {
+		.header-id {
+		    margin-top: -6px;
+		    height: 50px;
+		}
+		header .logo-wrapper .logo .logo-text {
+		    font-size: 12px;
+		    letter-spacing: 10px;
+		    margin-left: 30px !important;
+		}
 		header .first-header,
 		header .second-header {
 			display: block;
@@ -617,9 +696,14 @@
 	}
 
 	@media ( min-width: 2560px ) {
+		.header-id {
+			margin-top: -7px;
+			height: 70px;
+		}
 		header .logo-wrapper .logo .logo-text {
-		    font-size: 23px;
+		    font-size: 20px;
 		    letter-spacing: 10px;
+		    margin-left: 25px !important;
 		}
 		ul.social-icons > li {
 		    margin: -25px 25px;
