@@ -455,29 +455,13 @@
 	span:nth-child(5).letters-3 {
 		text-shadow: -15px 0 20px rgba(0, 0, 0, 0.80);
 	}
-	.header-id {
-	    position: absolute;
-	    left: 40px;
-	    top: 30px;
-	    height: 45px;
-	    width: auto;
-	    z-index: 1000;
-	    opacity: 0;
-	    user-select: none;
-	    transform: translateY(30px);
-	}
-
 
 	/* responsive */
 	@media ( min-width: 320px ) {
-		.header-id {
-		    margin-top: -4px;
-		    height: 50px;
-		}
 		header .logo-wrapper .logo .logo-text {
 		    font-size: 12px;
 		    letter-spacing: 10px;
-		    margin-left: 80px !important;
+		    margin-left: 10px !important;
 		}
 		header .first-header,
 		header .second-header {
@@ -520,14 +504,10 @@
 	}
 
 	@media ( min-width: 375px ) {
-		.header-id {
-		    margin-top: -4px;
-		    height: 50px;
-		}
 		header .logo-wrapper .logo .logo-text {
 		    font-size: 12px;
 		    letter-spacing: 10px;
-		    margin-left: 80px !important;
+		    margin-left: 10px !important;
 		}
 		header .first-header,
 		header .second-header {
@@ -572,14 +552,10 @@
 	}
 
 	@media ( min-width: 425px ) {
-		.header-id {
-		    margin-top: -4px;
-		    height: 50px;
-		}
 		header .logo-wrapper .logo .logo-text {
 		    font-size: 12px;
 		    letter-spacing: 10px;
-		    margin-left: 70px !important;
+		    margin-left: 10px !important;
 		}
 		header .first-header,
 		header .second-header {
@@ -624,14 +600,10 @@
 	}
 
 	@media ( min-width: 768px ) {
-		.header-id {
-		    margin-top: -6px;
-		    height: 50px;
-		}
 		header .logo-wrapper .logo .logo-text {
 		    font-size: 12px;
 		    letter-spacing: 10px;
-		    margin-left: 70px !important;
+		    margin-left: 5px !important;
 		}
 		header .first-header,
 		header .second-header {
@@ -660,14 +632,10 @@
 	}
 
 	@media ( min-width: 1440px ) {
-		.header-id {
-		    margin-top: -6px;
-		    height: 50px;
-		}
 		header .logo-wrapper .logo .logo-text {
 		    font-size: 12px;
 		    letter-spacing: 10px;
-		    margin-left: 30px !important;
+		    margin-left: 5px !important;
 		}
 		header .first-header,
 		header .second-header {
@@ -696,14 +664,10 @@
 	}
 
 	@media ( min-width: 2560px ) {
-		.header-id {
-			margin-top: -7px;
-			height: 70px;
-		}
 		header .logo-wrapper .logo .logo-text {
 		    font-size: 20px;
 		    letter-spacing: 10px;
-		    margin-left: 25px !important;
+		    margin-left: -30px !important;
 		}
 		ul.social-icons > li {
 		    margin: -25px 25px;
