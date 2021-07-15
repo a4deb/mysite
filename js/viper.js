@@ -133,13 +133,6 @@
 						ease: Expo.easeInOut
 					});
 
-					TweenMax.to('.header-id', 3, {
-						y: 0,
-						opacity: 1,
-						delay: 6.4,
-						ease: Expo.easeInOut
-					});
-
 					/* social media icons */
 					var facebook_icon = $('.header-facebook'),
 						instagram_icon = $('.header-ig'),
