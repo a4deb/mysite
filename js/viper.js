@@ -226,6 +226,12 @@
 						ease: Elastic.easeInOut
 					});
 
+					setTimeout(function() {
+						$('.proj-nav a > .nav-btn').css({
+							cursor: 'pointer'
+						});
+					}, 17000);
+
 			}
 
 		var play_audio = document.getElementById('bg-audio');
@@ -325,14 +331,16 @@
 			top_header_nav = $('.navigations');
 
 		var animate_navigator = function( box_arr ) {
-			setTimeout(function( box1, box2 ) {
+			setTimeout(function( box1, box2, box3 ) {
 
-				box_arr = [box1, box2];
-				box_arr[0] = '.box-2';
-				box_arr[1] = '.box-3';
+				box_arr = [box1, box2, box3];
+				box_arr[0] = '.box-1';
+				box_arr[1] = '.box-2';
+				box_arr[2] = '.box-3';
 
 				$(box_arr[0]).animate({ top: 0 }, 700, 'easeOutElastic');
 				$(box_arr[1]).animate({ top: 0 }, 1400, 'easeOutElastic');
+				$(box_arr[2]).animate({ top: 0 }, 2200, 'easeOutElastic');
 
 			}, box_duration);
 
@@ -363,12 +371,6 @@
 			play_audio.play();
 			header_video.pause();
 
-			TweenMax.to('.mute-pos', 2, {
-				opacity: 1,
-				marginTop: 0,
-				delay: 2.4,
-				ease: Expo.easeInOut
-			});
 			setTimeout(function() {
 				proj_title.animate({ top: 0 }, slide_duration - 500, 'easeOutExpo');
 			}, 4300);
@@ -443,6 +445,12 @@
 						$('.slides-3').css({
 							transform: 'scale(1)',
 							transition: 500 + 'ms ' + 'ease'
+						});
+
+						$('.mute-pos').css({
+							opacity: 1,
+							marginTop: 0,
+							display: 'block'
 						});
 
 					}, slide_duration);
@@ -489,12 +497,6 @@
 			play_audio.play();
 			header_video.pause();
 
-			TweenMax.to('.mute-pos', 2, {
-				opacity: 1,
-				marginTop: 0,
-				delay: 2.4,
-				ease: Expo.easeInOut
-			});
 			setTimeout(function() {
 				proj_title.animate({ top: 0 }, slide_duration - 500, 'easeOutExpo');
 			}, 4300);
@@ -571,6 +573,12 @@
 							transition: 500 + 'ms ' + 'ease'
 						});
 
+						$('.mute-pos').css({
+							opacity: 1,
+							marginTop: 0,
+							display: 'block'
+						});
+
 					}, slide_duration);
 
 					setTimeout(function() {
@@ -609,6 +617,12 @@
 
 				/* slide page down continuously */
 				if (_hash == 'contact') {
+
+						TweenMax.to('.box-background', 2, {
+							y: 0,
+							delay: 1,
+							ease: Expo.easeInOut
+						});
 
 						$('.footer-elements').css('display', 'block');
 						/* social media icons */
