@@ -35,6 +35,11 @@
 		height: 100%;
 		background-color: #111;
 		z-index: 1;
+		overflow: hidden;
+		background-image: url('../../images/contact-bg.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		/*opacity: 0.2;*/
 		transition: 500ms ease;
 		/*transform: scale(0.8);*/
@@ -391,7 +396,6 @@
 	    margin-left: 8px;
 	    letter-spacing: 2px;
 	    padding-right: 20px;
-	    background-color: #111;
 	    /* visibility: hidden; */
 	}
 	.email .form-box .email-title .fa-envelope {
@@ -537,6 +541,15 @@
 	    margin-top: 30px;
 	    opacity: 1;
 	}
+	.box-background {
+		position: absolute;
+	    top: 0;
+	    left: 50%;
+	    width: 50%;
+	    height: 100vh;
+	    background-color: #090909;
+	    transform: translate(-50%, 100vh);
+	}
 
 	/* responsive */
 	@media ( min-width: 320px ) {
@@ -597,6 +610,10 @@
 		    width: 0;
 		    border: 0;
 		}
+		.box-background {
+			width: 100%;
+			opacity: 0.6;
+		}
 	}
 
 	@media ( min-width: 375px ) {
@@ -625,6 +642,10 @@
 		    width: 0;
 		    border: 0;
 		}
+		.box-background {
+			width: 100%;
+		    opacity: 0.6;
+		}
 	}
 
 	@media ( min-width: 425px ) {
@@ -652,6 +673,10 @@
 		    height: 0;
 		    width: 0;
 		    border: 0;
+		}
+		.box-background {
+			width: 100%;
+		    opacity: 0.6;
 		}
 	}
 
@@ -713,6 +738,10 @@
 		    width: calc(272px);
 		    border: 3px solid transparent;
 		}
+		.box-background {
+			width: 57%;
+			opacity: 1;
+		}
 	}
 
 	@media ( min-width: 1024px ) {
@@ -770,6 +799,10 @@
 		    width: calc(272px);
 		    border: 3px solid transparent;
 		}
+		.box-background {
+			width: 60%;
+			opacity: 1;
+		}
 	}
 
 	@media ( min-width: 1440px ) {
@@ -826,6 +859,10 @@
 		    height: calc(90px);
 		    width: calc(272px);
 		    border: 3px solid transparent;
+		}
+		.box-background {
+			width: 50%;
+			opacity: 1;
 		}
 	}
 
@@ -890,5 +927,9 @@
 		    height: calc(90px);
 		    width: calc(272px);
 		    border: 3px solid transparent;
+		}
+		.box-background {
+			width: 50%;
+			opacity: 1;
 		}
 	}
