@@ -429,7 +429,7 @@
 
 	.lb-outerContainer {
 	  position: relative;
-	  *zoom: 1;
+	  zoom: 1;
 	  width: 250px;
 	  height: 250px;
 	  margin: 0 auto;
@@ -582,6 +582,9 @@
 		.project-nav ul li a {
 		    font-size: 12px;
 		}
+		.project-nav ul li img {
+			width: 110%;
+		}
 	}
 
 	@media ( min-width: 375px ) {
@@ -607,6 +610,9 @@
 		.project-nav ul li a {
 		    font-size: 12px;
 		}
+		.project-nav ul li img {
+			width: 110%;
+		}
 	}
 
 	@media ( min-width: 425px ) {
@@ -631,6 +637,9 @@
 		}
 		.project-nav ul li a {
 		    font-size: 12px;
+		}
+		.project-nav ul li img {
+			width: 110%;
 		}
 	}
 
@@ -659,6 +668,9 @@
 		.project-nav ul li a {
 		    font-size: 12px;
 		}
+		.project-nav ul li img {
+			width: 150%;
+		}
 	}
 
 	@media ( min-width: 1200px ) {
@@ -686,14 +698,20 @@
 		.project-nav ul li a {
 		    font-size: 12px;
 		}
+		.project-nav ul li img {
+			width: 100%;
+		}
 	}
 
 	@media ( min-width: 1024px ) {
 		.project-nav ul li {
-			width: 30%;
+			width: 32.5%;
 		}
 		.project-nav ul li a {
 		    font-size: 12px;
+		}
+		.project-nav ul li img {
+			width: 135%;
 		}
 	}
 
@@ -703,6 +721,9 @@
 		}
 		.project-nav ul li a {
 		    font-size: 12px;
+		}
+		.project-nav ul li img {
+			width: 100%;
 		}
 	}
 
@@ -728,6 +749,9 @@
 		}
 		.project-nav ul li a {
 		    font-size: 14px;
+		}
+		.project-nav ul li img {
+			width: 100%;
 		}
 
 	}
